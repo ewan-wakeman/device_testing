@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "device-test"
+version = "0.1.0"
+description = ""
+authors = ["Ewan Wakeman <ewan.wakeman@nhs.net>"]
+readme = "README.md"
+packages = [{include = "device_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+logzero = "^1.7.0"
+numpy = "^1.23.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.971"
+black = "^22.6.0"
+flake8 = "^5.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
